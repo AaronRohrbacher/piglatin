@@ -1,7 +1,7 @@
 function converter(sentence) {
   arr = sentence.split(" ");
   for(i = 0; i < arr.length; ++i) {
-    var word = arr[i];
+    var word = arr[i].slice(1);
     arr[i] = word+"ay";
   }
   return arr.toString();
