@@ -1,10 +1,12 @@
 function converter(sentence) {
   arr = sentence.split(" ");
   for(i = 0; i < arr.length; ++i) {
+    var firstLetter = arr[i].charAt(0);
     var word = arr[i].slice(1);
-    arr[i] = word+"ay";
+    arr[i] = word+firstLetter+"ay";
   }
-  return arr.toString();
+
+  return arr.join();
 }
 
 $(document).ready(function() {
